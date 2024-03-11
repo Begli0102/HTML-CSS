@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;1,200;1,300;1,400;1,500&family=Urbanist:ital,wght@0,500;1,500;1,700&family=Vujahday+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Kontaktformular</h1>
+      <h3 class="sub-title">
+        Unser Team unterstützt dich persönlich dabei, die richtige Weiterbildung
+        für dich zu finden
+      </h3>
+      <form id="contact-form">
+        <div class="input-form-1">
+          <input type="text" id="vorname" placeholder="Vorname*" required />
+          <input type="text" id="nachname" placeholder="Nachname*" required />
+        </div>
+        <div class="input-form-2">
+          <input type="email" id="email" placeholder="E-mail*" required />
+        </div>
+        <div class="input-form-3">
+          <input
+            type="text"
+            id="telefonnummer"
+            placeholder="Telefonnummer*"
+            required
+          />
+        </div>
+        <div class="input-form-4">
+          <select type="select" id="select">
+            <option value="">
+              Bitte wähle dein Anliegen*
+            </option>
+          </select>
+        </div>
+        <div class="input-form-5">
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Nachricht"
+            required
+          ></textarea>
+        </div>
+        <h6 class="footer_info">
+          Weitere Informationen können Sie der
+          <span>Datenschutzerklärung </span> entnehmen.
+        </h6>
+        <button type="submit" id="formButton" class="form-button">
+          Jetzt kontaktieren
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
